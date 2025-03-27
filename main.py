@@ -28,7 +28,7 @@ token_tela = utils.Token_tela(client_id=os.getenv('TOKEN_TELA_EXTENSOES_CLIENT_I
 
 retorno = utils.RequisicaoTela(authorization=token_tela,
                                    method="GET",
-                                   url="https://api.folha.betha.cloud/folha/api/matricula/FUNCIONARIO/campos-adicionais/36331166",
+                                   url=url,
                                    headers={
                                        'accept': 'application/json, text/plain, */*',
                                        'user-access': os.getenv("TOKEN_TELA_USER_ACCESS"),
